@@ -1012,8 +1012,8 @@ class Completion:
 		with _lock:
 
 			# If the usage statistics file hasn't been loaded already, do it now.
-			if not _statsLoaded:
-				loadStats()
+			#if not _statsLoaded:
+				#loadStats()
 
 			# This measures the length of the prompt in tokens, and updates
 			# the global record of API usage statistics accordingly.

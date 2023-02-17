@@ -37,7 +37,7 @@ class Tokenizer:
 
 		# The below model dir should be built out starting
 		# from a clone of https://github.com/openai/gpt-2
-	_DEFAULT_MODEL_DIR = '/Users/karanmalhotra/David/GLaDOS/opt/gpt-2/models'
+	_DEFAULT_MODEL_DIR = '/home/ec2-user/opt/gpt-2/models'
 	
 		# The tokenizer for each GPT-2 model is the same;
 		# it's sufficient to just download the smallest one.
