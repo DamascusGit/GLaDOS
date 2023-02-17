@@ -24,3 +24,8 @@ to have previously been installed:
         pip3 install requests
         pip3 install tqdm
         pip3 install regex
+
+You will also need to download opt/gpt-2 and the 124M model for its encoder.json and other features.
+You can get the weights from here: https://www.kaggle.com/datasets/xhlulu/openai-gpt2-weights
+
+Change the path in src/tokenizer/tokenizer.py to point to the directory containing GPT-2/models.
