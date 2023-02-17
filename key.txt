@@ -1,0 +1,6 @@
+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
+
+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
+
+export TERM=xterm-256color
+export TERMINFO=/usr/share/terminfo

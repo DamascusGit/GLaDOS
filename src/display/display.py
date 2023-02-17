@@ -1455,8 +1455,8 @@ class TheDisplay:
 			# Now we potentially need to resize the window structures
 			# within curses, if the terminal size has actually changed.
 
-		_logger.debug(f"display._resize(): Resizing terminal to {(height,width)}.")
-		resizeterm(height, width)
+		#_logger.debug(f"display._resize(): Resizing terminal to {(height,width)}.")
+		#resizeterm(height, width)
 			# This has the effect of updating curses' idea of the terminal
 			# size in curses.{LINES,COLS}; note that this *only* works right
 			# if the environment variables LINES, COLUMNS are not set!  So

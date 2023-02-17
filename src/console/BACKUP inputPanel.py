@@ -551,11 +551,11 @@ class InputPanel(Panel):
 		#|
 		#|vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-		elif keycode == KEY_TAB:		# F1 = Get AI's attention.
+		elif keycode == KEY_F1:		# F1 = Get AI's attention.
 
 			panel.keyAttention()
 
-		elif keycode == KEY_ESCAPE:		# F2 = Send text to GLaDOS.
+		elif keycode == KEY_F2:		# F2 = Send text to GLaDOS.
 
 			panel.keySend()
 

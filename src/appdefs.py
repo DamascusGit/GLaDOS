@@ -25,7 +25,7 @@
 
 		SYSTEM NAME:    GLaDOS (Generic Lifeform and Domicile Operating System)
 		APP NAME:       GLaDOS.server (GLaDOS server application)
-        APP NAME:       TelegramBot (Gladys' Telegram Bot)
+        APP NAME:       TelegramBot (Yugeto's Telegram Bot)
 		SW COMPONENT:   GLaDOS.logging (GLaDOS logging framework)
 
 		CODE LAYER:		0 (bottommost layer; no imports of custom modules)
@@ -170,7 +170,7 @@ _appDict = {
 
         'systemName':   'GLaDOS',               # The Telegram bot application uses some GLaDOS-specific features.
         'appName':      'TelegramBot',          # However, it's conceptually a separate application from the GLaDOS system.
-        'topFile':      'gladys-telegram-bot'   # Top-level file of this application is gladys-telegram-bot.py.
+        'topFile':      'yugetos-telegram-bot'   # Top-level file of this application is gladys-telegram-bot.py.
 
     }
 }
@@ -280,7 +280,7 @@ def selectApp(appID:str) -> None:
 
                     glados-server   - Main GLaDOS server application.
 
-                    telegram-bot    - Gladys' Telegram bot application.
+                    telegram-bot    - Yugeto's Telegram bot application.
 
         Returns:
             None

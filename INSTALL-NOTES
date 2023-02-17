@@ -4,20 +4,23 @@ INSTALLATION NOTES.
 Note that GLaDOS requires the following optional Python packages
 to have previously been installed:
 
-
     Used by gpt3.api module:
     ~~~~~~~~~~~~~~~~~~~~~~~~
-        pip3 install openai
-        pip3 install backoff
+        pip3 install openai==0.2.4
+        pip3 install backoff==1.10.0
 
 
     Used by the config package:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        pip3 install hjson              (Needed to parse config files.)
+        pip3 install hjson==3.0.2              (Needed to parse config files.)
 
 
     Used by the infrastructure.time module:
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        pip3 install python-dateutil    (Needed to get time zone abbreviations right.)
-
-
+        pip3 install python-dateutil==2.8.2    (Needed to get time zone abbreviations right.)
+    
+    Used by encoder.py:
+    ~~~~~~~~~~~~~~~~~~~
+        pip3 install requests
+        pip3 install tqdm
+        pip3 install regex

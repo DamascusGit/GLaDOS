@@ -142,7 +142,7 @@
                     coded" into it; someday, if we have more models available,
                     we may want to specify this as a separate parameter. */
 
-            title:                  "GLaDOS Main Screen / GPT-3 Receptive Field"
+            title:                  "GLaDOS Main Screen / LLM Receptive Field"
 
                 /* The nominal width of the receptive field, in (assumed
                     fixed-width) characters.  (Note that not all field views

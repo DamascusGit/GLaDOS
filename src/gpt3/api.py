@@ -233,6 +233,7 @@ __all__ = [
 #    text-curie-001     2048          0.006
 #    text-davinci-001   2048          0.06
 #    text-davinci-002   4096          0.06
+#	 code-davinci-002	4095		  0.00
 
 # The below statement was written by Codex, with format adjustments by MPF.
 
@@ -245,7 +246,10 @@ _ENGINE_ATTRIBS = {
     'text-babbage-001': {'engine-name': 'text-babbage-001', 'field-size': 2048, 'price': 0.0012},
     'text-curie-001':	{'engine-name': 'text-curie-001',   'field-size': 2048, 'price': 0.006},
     'text-davinci-001': {'engine-name': 'text-davinci-001', 'field-size': 2048, 'price': 0.06},
-    'text-davinci-002': {'engine-name': 'text-davinci-002', 'field-size': 4096, 'price': 0.06}
+    'text-davinci-002': {'engine-name': 'text-davinci-002', 'field-size': 4096, 'price': 0.06},
+    'code-davinci-002': {'engine-name': 'code-davinci-002', 'field-size': 4096, 'price': 0.00},
+    'text-davinci-002-render-paid': {'engine-name': 'text-davinci-002-render-paid', 'field-size': 4096, 'price': 0.00}
+
 }
 
 # Given an engine name and an attribute name, return the attribute value.
@@ -272,6 +276,9 @@ def _get_price(engine_name):
 global		DEF_ENGINE				# Default GPT-3 engine name.
 DEF_ENGINE	= 'davinci'				# This is the original largest (175B-parameter) model. Origin of Gladys.
 #DEF_ENGINE	= 'text-davinci-002'	# New "best" (4000-token field) model.
+#DEF_ENGINE = 'text-davinci-002-render-paid' #ChatGPT temporarily exposed model.
+#DEF_ENGINE = 'code-davinci-002' #Free model.
+
 
 global		DEF_TOKENS	# Default number of tokens to return.
 #DEF_TOKENS	= 42		# Of course.
@@ -326,6 +333,8 @@ inputToks = {
 		'text-curie-001':		0,
 		'text-davinci-001':		0,
 		'text-davinci-002':		0,
+		'code-davinci-002': 	0,
+		'text-davinci-002-render-paid': 	0,
 	}
 
 outputToks = {
@@ -338,6 +347,8 @@ outputToks = {
 		'text-curie-001':		0,
 		'text-davinci-001':		0,
 		'text-davinci-002':		0,
+		'code-davinci-002': 	0,
+		'text-davinci-002-render-paid': 	0,
 	}
 
 # Meanwhile, this dict will keep track of the cumulative expenditures
@@ -354,6 +365,8 @@ expenditures = {
 		'text-curie-001':		0,
 		'text-davinci-001':		0,
 		'text-davinci-002':		0,
+		'code-davinci-002':		0,
+		'text-davinci-002-render-paid': 	0,
 	}
 
 # This global variable tracks the total cost in dollars across all engines.
